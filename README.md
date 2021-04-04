@@ -1,5 +1,8 @@
 # filed-audio-server
 
+## Screenshots (Swagger doc)
+![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/one.png)
+
 
 # API END POINTS
 
