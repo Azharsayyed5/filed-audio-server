@@ -2,16 +2,16 @@
 - API endpoints are mentioned below screenshots
 
 ## Screenshots (Swagger doc)
-    ![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/one.png)
-    ![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/two.png)
-    ![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/one.png)
-    ![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/three.png)
-    ![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/four.png)
-    ![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/five.png)
-    ![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/six.png)
-    ![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/seven.png)
-    ![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/eight.png)
-    ![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/nine.png)
+![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/one.png)
+![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/two.png)
+![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/one.png)
+![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/three.png)
+![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/four.png)
+![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/five.png)
+![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/six.png)
+![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/seven.png)
+![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/eight.png)
+![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/nine.png)
 
 # API END POINTS
 
