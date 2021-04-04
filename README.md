@@ -3,7 +3,7 @@
 
 # API END POINTS
 
-#### 1. Create
+- 1. Create record
     url = /v1/filed
     method = Post
     content-type=application/json
@@ -47,7 +47,7 @@
                         }
                     }
                     
-####2. UPDATE
+- 2. UPDATE
 
     url = /v1/filed/<audioFileType>/<audioFileID> 
     method = PUT
@@ -98,7 +98,7 @@
             }
         }
 
-##3. delete
+- 3. delete
   
     url = /v1/filed/<audioFileType>/<audioFileID>
     method = DELETE
@@ -111,10 +111,10 @@
     - Delete audiobook record
         - url : `/v1/filed/audiobook/1`
 
-##4. Get records
+- 4. Get records
 
-   1. - url:  `/v1/filed/<audioFileType>`
+   1. - URL:  `/v1/filed/<audioFileType>`
       - description: `Get all the data present for type <audioFileType>`
     
-   2. - url:  `/v1/filed/<audioFileType>/<audioFileID>`
+   2. - URL:  `/v1/filed/<audioFileType>/<audioFileID>`
       - description: `Get data present for type <audioFileType> and id <audioFileID>`    
