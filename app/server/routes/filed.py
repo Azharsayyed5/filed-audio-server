@@ -51,6 +51,8 @@ async def add_audio(request: Request, data: AudioSchema):
             if audio_type == 'podcast':
                 if validate_participents(data):
                     return ErrorResponseModel("Number of participents should be below or equal to 10 and participents character limit should ne less than 100.")
+            # Add current upload datetime
+            data.audioFileMetaData['uploaded_time'] = datetime.datetime.utcnow()
             # Encode data
             create_data = jsonable_encoder(data) 
             if create_data["audioFileMetaData"]["duration_time"] <= 0:

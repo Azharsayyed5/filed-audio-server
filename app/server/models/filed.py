@@ -3,7 +3,7 @@ import datetime
 from pydantic import BaseModel, EmailStr, Field
 
 class SongsMetaData(BaseModel):
-    uploaded_time: str
+    # uploaded_time: str
     duration_time: int
     name: Optional[str]
     host: Optional[str]
@@ -21,7 +21,7 @@ class AudioSchema(BaseModel):
             "example": {
                     "audioFileType": "audiobook",
                     "audioFileMetaData": {
-                        "uploaded_time": "2021-03-13 16:20:20",
+                        # "uploaded_time": "2021-03-13 16:20:20",
                         "duration_time": 120,
                         "title": "happy happy",
                         "author": "azhar",
