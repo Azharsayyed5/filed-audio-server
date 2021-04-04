@@ -5,6 +5,13 @@ A Audio file server developed with python's new and ultra light framework `FastA
 - Heroku link - https://filed-audio-server.herokuapp.com/docs
 - API endpoints are mentioned below screenshots
 
+## RUN SERVER
+1. Create virtual env with `python` (Python should be greater than 3.7 version)
+2. Activate env (/venv/scripts/activate for windows) (/venv/bin/activate for linux/mac)
+3. Install all dependencies witb `pip install -r requirements.txt`
+4. Go to app directory
+5. run `python3 main.py`
+
 ## Screenshots (Swagger doc)
 ![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/one.png)
 ![image](https://github.com/Azharsayyed5/filed-audio-server/blob/main/screenshot/two.png)
