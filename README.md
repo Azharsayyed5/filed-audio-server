@@ -1,4 +1,7 @@
 # filed-audio-server
+
+A Audio file server developed with python's new and ultra light framework `FastAPI` which helps in developing APIs in less time and with best practices.
+
 - Heroku link - https://filed-audio-server.herokuapp.com/docs
 - API endpoints are mentioned below screenshots
 
