@@ -3,7 +3,7 @@
 
 # API END POINTS
 
-@ 1. Create record /n
+## 1. Create record
     url = /v1/filed
     method = Post
     content-type=application/json
