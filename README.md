@@ -1,17 +1,119 @@
 # filed-audio-server
 
 
-- Test create song :
+# API END POINTS
 
-  curl -X 'POST' \
-    'https://filed-audio-server.herokuapp.com/v1/filed/' \
-    -H 'accept: application/json' \
-    -H 'Content-Type: application/json' \
-    -d '{
-    "audioFileType": "song",
-    "audioFileMetaData": {
-      "uploaded_time": "2021-03-13 16:20:20",
-      "duration_time": 120,
-      "name": "New 2021"
-    }
-  }'
+#### 1. Create
+    url = /v1/filed
+    method = Post
+    content-type=application/json
+    
+   - structures:
+        - song 
+                
+             Request body
+                
+               {
+                "audioFileType":"song",
+                "audioFileMetadata":{
+                    "duration_time":<time duration in seconds>,
+                    "name":"<song name>"
+                    }
+                }
+        - podcast
+            
+            - request body
+                   
+                   {
+                        "audioFileType":"podcast",
+                        "audioFileMetadata":{
+                                "duration_time":<time duration in seconds>,
+                                "name":"<podcast name>",
+                                "host":"<host name>",
+                                "participents":["<participents name>","<participents name>"]
+                        }
+                     }      
+        - audiobook
+        
+            - request body
+            
+                    {
+                        "audioFileType":"audiobook",
+                        "audioFileMetadata":{
+                                "duration_time":<time duration in seconds>,
+                                "title":"<title>",
+                                "author":"<author name>",
+                                "narrator":"<narrator name>"
+                        }
+                    }
+                    
+####2. UPDATE
+
+    url = /v1/filed/<audioFileType>/<audioFileID> 
+    method = PUT
+    content-type=application/json
+- song
+    
+    - url : `/v1/filed/song/1`
+    - request body :
+            
+            {
+                "audioFileType":"song",
+                "audioFileMetadata":{
+                        "duration_time":<time duration in seconds>,
+                        "name":"<song name>"    
+                }
+            }
+        
+        
+    
+- podcast
+    
+    - url : `/v1/filed/podcast/1`
+    - request body : 
+    
+            {
+                "audioFileType":"podcast",
+                "audioFileMetadata":{
+                    "duration_time":<time duration in seconds>,
+                    "name":"<podcast name>",
+                    "host":"<host name>",
+                    "participents":["<participents name>", "<participents name>"]    
+                 }    
+        }
+    
+    
+- audiobook
+    
+    - url : `/v1/filed/audiobook/1`       
+    - request body:
+    
+            {
+            "audioFileType":"audiobook",
+            "audioFileMetadata":{
+                    "duration_time":<time duration in seconds>,
+                    "title":"<title>",
+                    "author":"<author name>",
+                    "narrator":"<narrator name>"  
+            }
+        }
+
+##3. delete
+  
+    url = /v1/filed/<audioFileType>/<audioFileID>
+    method = DELETE
+    content-type = application/json
+    
+    - Delete song record
+        - url: `/v1/filed/song/1` 
+    - Delete podcast record
+        - url: `/v1/filed/podcast/1`
+    - Delete audiobook record
+        - url : `/v1/filed/audiobook/1`
+
+##4. Get records
+
+   1. - url:  `/v1/filed/<audioFileType>`
+      - description: `Get all the data present for type <audioFileType>`
+   2.- url:  `/v1/filed/<audioFileType>/<audioFileID>`
+      - description: `Get data present for type <audioFileType> and id <audioFileID>`    
