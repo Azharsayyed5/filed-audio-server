@@ -1,12 +1,19 @@
 import motor.motor_asyncio
 from bson.objectid import ObjectId
 from decouple import config
+import os
+import sys
+# MONGO_DETAILS = "mongodb://localhost:27017/"
 
-MONGO_DETAILS = "mongodb://localhost:27017/" 
+mongo_password= os.environ.get("MONGO_PASSWORD", None)
+if not mongo_password:
+    sys.exit(1)
+
+MONGO_DETAILS = f"mongodb+srv://root:{mongo_password}@cluster0.vgoq0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 client = motor.motor_asyncio.AsyncIOMotorClient(MONGO_DETAILS)
 
-database = client.filed
+database = client.myFirstDatabase
 
 collection = database.get_collection("audio")
 
